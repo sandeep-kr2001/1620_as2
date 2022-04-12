@@ -15,11 +15,18 @@
   --bg-color: var(--not-white);
   --bg-side:  var(--drk-white);
   --text:     var(--not-black);
+  --textarea: var(--drk-white);
+  --place:    var(--not-black);
 }
 
-/* .dark-theme { */
-/*   --bg-color: var(--not-grey); */
-/* } */
+.dark-theme {
+  --bg-color: var(--not-grey);
+  --bg-side:  var(--muted);
+  --text:     var(--not-white);
+  --li:       var(--not-white);
+  --textarea: var(--muted);
+  --place:    var(--not-white);
+}
 
 * {
   margin: 0;
@@ -53,6 +60,11 @@
 
 .side-nav span p {
   font-size: var(--lrg-txt);
+}
+
+.side-nav li{
+  color: var(--li);
+  font-size: 1.5rem;
 }
 
 .main {
@@ -133,4 +145,60 @@ footer {
 footer p {
   color: var(--text);
   font-size: var(--lrg-txt);
+}
+
+.save-button{
+  color:  var(--not-black);
+  background-color: var(--not-green);
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1;
+  margin: 10px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.buttons-fornote{
+  margin-left: 72%;
+}
+
+.cancel-button{
+  color:  var(--not-black);
+  background-color: var(--not-red);
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1;
+  margin: 10px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.note-textarea{
+  background-color:  var(--textarea);
+  font-size: 20px;
+}
+
+::placeholder {
+  color: var(--place);
+  opacity: 1; 
+  font-family: 'Quicksand', sans-serif;
+}
+
+.closeBtn{
+  color:  var(--not-black);
+  background-color: var(--not-red);
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2;
+  margin-top: 10px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.text-list p{
+  font-size: 30px;
+}
+
+.closeBtn:hover,.cancel-button:hover,.save-button:hover{
+text-decoration: underline;
 }
