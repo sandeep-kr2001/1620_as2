@@ -134,6 +134,7 @@ textarea {
   outline: none;
   resize: none;
   overflow: auto;
+  color: var(--text);
 }
 
 footer {
