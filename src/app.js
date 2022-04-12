@@ -11,6 +11,8 @@ const writeNote = document.querySelector(".write-note-area")
 const noteDisplayArea = document.querySelector(".notes-list")
 const createNote = document.querySelector('.create-note-area')
 const readNote = document.querySelector(".read-note-area")
+const darkMode = document.querySelector(".theme-toggle")
+const lightTheme = document.querySelector('.light-theme')
 
 //Add text area
 function addNewText() {
@@ -64,3 +66,9 @@ readNote.insertAdjacentHTML("afterbegin", readNoteList);
   closeBtn.addEventListener("click", closeRead);
 }
 noteDisplayArea.addEventListener("click", displayText);
+
+//Dark mode 
+function darkmode(){
+  lightTheme.classList.toggle("dark-theme") //returns dark-theme
+}
+darkMode.addEventListener('change', darkmode) ///listener for the button
