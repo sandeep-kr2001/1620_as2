@@ -19,7 +19,7 @@ function addNewText() {
   writeNote.insertAdjacentHTML("afterbegin", noteCreate);
   const cancelNoteBtn = document.querySelector(".cancel-button"); //selects the cancel button
   const saveTextBtn = document.querySelector(".save-button"); //selects the save button
-  saveTextBtn.addEventListener("click", savePad);
+  saveTextBtn.addEventListener("click", newNotepad);
   cancelNoteBtn.addEventListener("click", cancelNote); //listen the cancel 
   plusButton.removeEventListener("click", addNewText);
   plusButton.remove() //removes the plusButton
@@ -41,9 +41,6 @@ function newNotepad() {
   notes.push({ title: titles, noteBody: notePad.value, id: notes.length +1 }); //add 1 to next id and save the values 
   const listNote = `  <li>${titles}</li>`; //create a new list in ul
   noteDisplayArea.insertAdjacentHTML("beforeend", listNote);
-}
-function savePad() {
-  newNotepad();
   cancelNote();
 }
 
